@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infasia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body>
+
+
+<!-- Barra de navegación responsive con botón hamburguesa -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Infasia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#carouselInfasia">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pdfModal" data-bs-toggle="modal">Ver PDF</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#videoModal" data-bs-toggle="modal">Ver Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#offcanvasInfo" data-bs-toggle="offcanvas">Misión/Visión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+<!-- Carrusel de 5 imágenes -->
+<div id="carouselInfasia" class="carousel slide mt-10" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imag/2.png" class="d-block w-100" alt="Imagen 1">
+    </div>
+    <div class="carousel-item">
+      <img src="imag/1.png" class="d-block w-100" alt="Imagen 2">
+    </div>
+    <div class="carousel-item">
+      <img src="imag/3.png" class="d-block w-100" alt="Imagen 3">
+    </div>
+    <div class="carousel-item">
+      <img src="imag/4.png" class="d-block w-100" alt="Imagen 4">
+    </div>
+    <div class="carousel-item">
+      <img src="imag/5.png" class="d-block w-100" alt="Imagen 5">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselInfasia" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselInfasia" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Botones para abrir el PDF, video y Offcanvas -->
+<div class="container text-center mt-5">
+  <button class="btn btn-secondary m-2" data-bs-toggle="modal" data-bs-target="#pdfModal">Ver PDF</button>
+  <button class="btn btn-info m-2" data-bs-toggle="modal" data-bs-target="#videoModal">Ver Video</button>
+  <button class="btn btn-success m-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasInfo">Misión y Visión</button>
+</div>
+
+<!-- Modal para PDF -->
+<div class="modal fade" id="pdfModal" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documento PDF</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="archivo/04_02_Cuadernillo_de_preguntas_comunicacion_escrita_Saber_Pro_2018.pdf" width="100%" height="500px" style="border: none;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Video -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe src="video/23305-334228255_small.mp4" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Offcanvas con Misión y Visión -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasInfo">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Infasia</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <h6>Misión</h6>
+    <p>Brindar soluciones tecnológicas integrales que optimicen los procesos de las empresas, contribuyendo a su crecimiento y sostenibilidad.</p>
+    <h6>Visión</h6>
+    <p>Ser líderes en innovación y transformación digital en Latinoamérica para el año 2030.</p>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <small>Desarrollado por <strong>Osneider lazo duran</strong> &copy; 2025</small>
+  </footer>
+  
+
+</body>
+</html>
